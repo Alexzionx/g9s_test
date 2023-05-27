@@ -78,10 +78,8 @@ public class Tables {
                         result.append(this.outList("Ошибка - пересадки занимают больше 2-х часов", L.get(i)));
                     }
                 }
-
             }
         }
         return result.toString();
     }
-
 }

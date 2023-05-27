@@ -1,17 +1,14 @@
 package com.gridnine.testing;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Tables tables = new Tables();
-        List<Flight> flightsList;
         boolean again = true;
         Scanner scanner = new Scanner(System.in);
 
         while (again) {
-            flightsList = FlightBuilder.createFlights();
             System.out.print(Menu.homeMenu);
             switch (scanner.nextLine()) {
                 case "1" -> {
@@ -43,7 +40,5 @@ public class Main {
                 again = false;
             }
         }
-
-
     }
 }
